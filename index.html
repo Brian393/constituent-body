@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <title>Utopiana</title>
 
@@ -13,73 +11,76 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
   <link rel="stylesheet" href="reveal.js/dist/theme/serif.css" id="theme" />
 
-  <link
-    rel="stylesheet"
-    href="reveal.js/plugin/highlight/monokai.css"
-    id="highlight-theme"
-  />
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme" />
 
   <style>
     .video-slide {
       padding: 0 !important;
+      background: #000;
     }
 
     .video-slide iframe {
-      position: fixed;
-      inset: 0;
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       border: 0;
     }
   </style>
 </head>
-  <body>
-    <body>
 
-		<div class="reveal">
+<body>
 
-			<div class="slides">
-			
-				<section data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/1_title.png" data-background-size="contain" data-background-color="#000000"></section>
-			
-				<section data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/2_cuencas_lab.png" data-background-size="contain" data-background-color="#000000"></section>
-				
-				<section data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/3_cuencas_lab.png" data-background-size="contain" data-background-color="#000000"></section>
+  <div class="reveal">
 
-        <section data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/4_technosphere.png" data-background-size="contain" data-background-color="#000000"></section>
+    <div class="slides">
 
-				<section class="video-slide">
-  <iframe
-    src="https://player.vimeo.com/video/736493475#t=2m13s"
-    frameborder="0"
-    allow="autoplay; fullscreen; picture-in-picture"
-    allowfullscreen>
-  </iframe>
-</section>
-			
-				<section data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/utopiana/mississippi.png" data-background-size="contain" data-background-color="#000000"></section>
+      <section
+        data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/1_title.png"
+        data-background-size="contain" data-background-color="#000000"></section>
 
-				<section data-background-iframe="https://bigmuddy.rivertoday.org/"  data-background-interactive></section>				
-				
-			</div>
+      <section
+        data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/2_cuencas_lab.png"
+        data-background-size="contain" data-background-color="#000000"></section>
 
-		</div>
+      <section
+        data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/3_cuencas_lab.png"
+        data-background-size="contain" data-background-color="#000000"></section>
 
-    <script src="reveal.js/dist/reveal.js"></script>
-    <script src="reveal.js/plugin/notes/notes.js"></script>
-    <script src="reveal.js/plugin/markdown/markdown.js"></script>
-    <script src="reveal.js/plugin/highlight/highlight.js"></script>
-    <script src="reveal.js/plugin/zoom/zoom.js"></script>
-    <script>
-      // More info about initialization & config:
-      // - https://revealjs.com/initialization/
-      // - https://revealjs.com/config/
-      Reveal.initialize({
-        hash: true,
+      <section
+        data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/4_technosphere.png"
+        data-background-size="contain" data-background-color="#000000"></section>
 
-        // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
-      });
-    </script>
-  </body>
+      <section class="video-slide" data-background-color="#000000">
+        <iframe src="https://player.vimeo.com/video/736493475#t=2m13s" width="100%" height="100%" frameborder="0"
+          allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+        </iframe>
+      </section>
+
+      <section
+        data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/utopiana/mississippi.png"
+        data-background-size="contain" data-background-color="#000000"></section>
+
+      <section data-background-iframe="https://bigmuddy.rivertoday.org/" data-background-interactive></section>
+
+    </div>
+
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
+    });
+  </script>
+</body>
+
 </html>
