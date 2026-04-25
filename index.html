@@ -11,14 +11,29 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css" />
   <link rel="stylesheet" href="reveal.js/dist/theme/serif.css" id="theme" />
 
-  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css" id="highlight-theme" />
-
+  <link rel="stylesheet" href="reveal.js/dist/plugin/highlight/monokai.css" id="highlight-theme" />
   <style>
     .reveal .slide-background iframe {
       width: 100vw !important;
       height: 100vh !important;
       max-width: none !important;
       max-height: none !important;
+    }
+
+    .fullscreen-video {
+      padding: 0 !important;
+      background: #000;
+    }
+
+    .fullscreen-video video {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: none !important;
+      max-height: none !important;
+      object-fit: cover;
+      background: #000;
+      display: block;
+      margin: 0 auto;
     }
   </style>
 
@@ -36,10 +51,6 @@
 
       <section
         data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/2_cuencas_lab.png"
-        data-background-size="contain" data-background-color="#000000"></section>
-
-      <section
-        data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/3_cuencas_lab.png"
         data-background-size="contain" data-background-color="#000000"></section>
 
       <section
@@ -61,10 +72,11 @@
         data-background-image="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/6_watershed.png"
         data-background-size="contain" data-background-color="#000000"></section>
 
-      <section data-background-color="#000000">
-        <video
-          src="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/mississippi.mp4"
-          autoplay muted playsinline controls style="width:100vw; height:100vh; object-fit:contain; background:#000;">
+      <section class="fullscreen-video" data-background-color="#000000" style="height: 100%;">
+        <video data-autoplay muted playsinline controls>
+          <source
+            src="https://s3.us-east-2.amazonaws.com/ecotopia.today/assets/prod/reveal/investigaciones/mississippi.mp4"
+            type="video/mp4">
         </video>
       </section>
 
@@ -77,18 +89,14 @@
   </div>
 
   <script src="reveal.js/dist/reveal.js"></script>
-  <script src="reveal.js/plugin/notes/notes.js"></script>
-  <script src="reveal.js/plugin/markdown/markdown.js"></script>
-  <script src="reveal.js/plugin/highlight/highlight.js"></script>
-  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+  <script src="reveal.js/dist/plugin/notes.js"></script>
+  <script src="reveal.js/dist/plugin/markdown.js"></script>
+  <script src="reveal.js/dist/plugin/highlight.js"></script>
+  <script src="reveal.js/dist/plugin/zoom.js"></script>
+
   <script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
     Reveal.initialize({
       hash: true,
-
-      // Learn about plugins: https://revealjs.com/plugins/
       plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom],
     });
   </script>
